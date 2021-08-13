@@ -1,0 +1,42 @@
+div{
+    margin: 10px;
+    padding: 5px;
+}
+#father{
+    border: 1px solid red;
+}
+#father:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.事不过三{
+    border: 1px dashed red;
+    display: inline-block;
+    float: left;
+}
+.张三{
+    border: 1px dashed red;
+    display: inline-block;
+    float: left;
+}
+.德善{
+    border: 1px dashed red;
+    display: inline-block;
+    float: right;
+}
+/*
+clear：right；右侧不允许有浮动元素
+clear：left； 左侧不允许有浮动元素
+clear：both； 两侧不允许有浮动元素
+clear：none；
+ */
+.浮动{
+    border: 1px solid rosybrown ;
+    font-size: 12px;
+    line-height: 23px;
+    display: inline-block;
+    float: right;
+    clear: right;
+}

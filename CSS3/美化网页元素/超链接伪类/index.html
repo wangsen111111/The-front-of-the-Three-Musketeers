@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接伪类</title>
+    <style>
+        /*默认的颜色*/
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        /*鼠标悬浮的颜色*/
+        a:hover{
+            color: greenyellow;
+        }
+        /*鼠标按住未释放的状态*/
+        a:active{
+            color: red;
+        }
+        /*text-shadow:阴影颜色 水平偏移 垂直偏移 阴影半径*/
+        #price{
+            text-shadow: cyan 10px 10px 2px;
+        }
+    </style>
+</head>
+<body>
+<a href="#">
+    <img src="images/深入了解JVM.png" alt="" width="200" height="250">
+</a>
+<p>
+    <a href="#">深入理解Java虚拟机（第3版）</a>
+</p>
+<p>
+    <a href="">周志明著</a>
+</p>
+<p id="price">
+    ￥79.8
+</p>
+
+
+</body>
+</html>

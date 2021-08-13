@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>默认情况</title>
+    <style>
+        body{
+            height: 888px;
+        }
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 40px;
+            line-height: 25px;
+        }
+        #father{
+            border: 12px solid red;
+            position: relative;
+        }
+        #first{
+            background-color: cornflowerblue;
+            border: 12px dashed red;
+        }
+        #second{
+            background-color: coral;
+            border: 12px dashed darkcyan;
+            position: absolute;
+            left: 100px;
+            right: 100px;
+
+        }
+        #third{
+            background-color: darkmagenta;
+            border:12px dashed deeppink;
+        }
+    </style>
+</head>
+<body>
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+
+</body>
+</html>

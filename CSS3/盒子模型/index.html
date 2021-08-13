@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        /*body总有一个默认的外边框margin:0 */
+        h1,ul,li,a,body{
+            margin:0;
+            padding: 0;
+            text-decoration: none;
+        }
+    /*border:粗细  样式  颜色*/
+        #box{
+            width: 300px;
+            border: 1px solid red;
+            /*外边距的妙用，居中元素*/
+            margin:0 auto
+        }
+        h2{
+            font-size: 18px;
+            background-color: cyan;
+            line-height: 28px;
+            color: #1c1a17;
+            margin-top: 0;
+            margin-bottom: 5px;
+            margin-left: 112px;
+            margin-right: 115px;
+        }
+        form{
+            background: cornsilk;
+        }
+        div:nth-of-type(1) input{
+            border: 3px solid black;
+        }
+        div:nth-of-type(2) input{
+            border: 3px dashed greenyellow;
+        }
+        div:nth-of-type(3) input{
+            border: 1px solid blueviolet;
+            padding: 100px 200px 100px 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <h2>会员登陆</h2>
+    <form action="#">
+        <div>
+            <span>用户名:</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>密码:</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>邮箱:</span>
+            <input type="text">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

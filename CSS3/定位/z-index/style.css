@@ -1,0 +1,34 @@
+#content{
+    width: 160px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 1px solid red;
+}
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+/*父级元素相对定位*/
+#content ul{
+    position: relative;
+}
+.tipBg,.tipText{
+    position: absolute;
+    width: 160px;
+    height: 25px;
+    top: 40px;
+}
+.tipText{
+    color: white;
+    z-index: 666;
+    left: 44px;
+}
+.tipBg{
+    background: green;
+    /*变透明*/
+    opacity: 0.5;
+}
