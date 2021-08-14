@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- MD5工具类 -->
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+</head>
+<body>
+<form action="https://edu.51cto.com/course/25988.html" method="post">
+    <p>
+        <span>用户名：</span>
+        <input type="text" id="username" name="username">
+    </p>
+    <p>
+        <span>密码：</span> <input type="password" id="password" name="password">
+    </p>
+<!--绑定事件 onclick被点击-->
+    <button type="submit" onclick="check()">提交</button>
+</form>
+<script>
+    function check() {
+        var username=document.getElementById('username');
+        var password=document.getElementById('password');
+        // md5pwd.value=md5(password.value);
+        console.log(username.value);
+        console.log(password.value);
+        //MD5算法加密
+        password.value =md5(password.value);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        'use strict';
+        var Student={
+            name:"张三",
+            age:18,
+            run: function(){
+                console.log(this.name+"run......");
+            }
+        };
+        var wangwu={
+            name:"王五"
+        };
+        //原型对象  继承
+        wangwu.__proto__=Student;
+        var Bird={
+            fly:function(){
+                console.log(this.name+"fly......");
+            }
+        }
+        //wangwu的原型是Student
+        wangwu.__proto__=Bird;
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

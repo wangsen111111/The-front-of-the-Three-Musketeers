@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="father">
+    <h1>标题一</h1>
+    <p id="p1">p1此为要删除的节点</p>
+    <p class="p2">p2</p>
+</div>
+<script>
+    var p1=document.getElementById('p1');
+    var father=document.getElementById('father');
+    var father=p1.parentElement;//先获取父节点
+    // father.removeChild(p1);
+</script>
+
+</body>
+</html>

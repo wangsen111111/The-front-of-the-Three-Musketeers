@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+    <!--加入下面这行代码避免出现中文乱码，原理解释如下-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>简单计算器</title>
+    <style>
+        body{
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+        }
+        #border{
+            width: 300px;
+            border: 1px solid chartreuse;
+            margin-top: 0;
+            margin-bottom: 5px;
+            margin-left: 112px;
+            margin-right: 115px;
+            /*外边距的妙用，居中元素*/
+            margin: 0 auto;
+        }
+
+
+
+    </style>
+    <style type="text/css">
+        #in{
+            border: 1px solid red;
+            width: 200px;
+            background-color: #71ce25;
+            font-size: 16px;
+            width: 149px;
+            height: 143px;
+            border: 1px solid red;
+            border-radius: 949px ;
+
+        }
+        #add,#sub,#mul,#div{
+            width: 42px;
+            height: 42px;
+            border: 1px solid red;
+            border-radius: 949px ;
+            background-color: cyan;
+        }
+        h2{
+            font-family:新宋体;
+            font-size: 17px;
+            background-color: #9323b3;
+            margin-top: 0;
+            margin-bottom: 5px;
+            margin-left: 102px;
+            margin-right: 110px;
+        }
+    </style>
+</head>
+<body>
+<form action="CalServlet" name="yuqi" id="border">
+    <table >
+        <h2 >简单计算器</h2>
+        <tr>
+            <td>第一个数：</td>
+            <td><input type="text" name="num1" placeholder="请输入第一个数"/></td>
+        </tr>
+        <tr>
+            <td>第二个数：</td>
+            <td><input type="text" name="num2" placeholder="请输入第二个数"/></td>
+        </tr>
+    </table>
+    <dv id="in">
+        <tr>
+            <td><input type="submit" value="+" id="add" /></td>
+            <td><input type="submit" value="-" id="sub" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="*" id="mul" /></td>
+            <td><input type="submit" value="/" id="div" /></td>
+        </tr>
+    </dv>
+</form>
+</body>
+</html>
